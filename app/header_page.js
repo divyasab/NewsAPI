@@ -7,7 +7,7 @@ const Header=()=>{
                 <div className="row">
                     <div className="text-center font-size-sm header"> 
                         <span>NewsAPI</span>
-                        <img src="logo3.png" className="pb-3 icon"/>
+                        <img src="red-logo.png" className="pb-3 icon"/>
                         <span>Org</span>
                     </div>
                 </div>
@@ -18,12 +18,11 @@ const Header=()=>{
                 <div className="row">
                     <div className="text-center">
                        <input type="search" class="searchbar" placeholder="search" />                            
-                        <button className="border-0 " type="submit">
+                        <button  type="button">
                             <span>Go</span>
                         </button>
                     </div>               
                 </div>
-
             </div>    
         </>
     )

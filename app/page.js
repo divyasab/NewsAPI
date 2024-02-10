@@ -1,27 +1,26 @@
 
 import Footer from "./footer";
 import Header from "./header_page";
-import Rownews from "./row_news";
-import NewsData from "./newsapi_data";
+import News_row from "./news_row";
+
 
 
 
 const Page=()=>{
   return(
     <>
-    
       <Header/>
-      <Rownews/>
-      {/* { NewsData.map((articles)=>(
-         <Rownews
-          key={articles.id}
-          data={articles}
-         />
-      ))} */}
-      
-      
-      <Footer/>
-     
+      <div className="container">
+        <div className="row">
+            <div className="row_text ">
+                <span>TOP NEWS  FROM INDIA </span>          
+            </div>
+        </div>        
+        <News_row/>
+        <News_row/>
+        <News_row/>
+      </div>
+      <Footer/>         
     </>  
   )
 }

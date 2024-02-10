@@ -1,6 +1,7 @@
 
 .col_size{
   height: 500px;
+  
 }
 .header{
   font-family: "Iowan Old Style";
@@ -23,8 +24,8 @@
   }
 }
 .searchbar{
-  height: 53px;
-  background-image: url('/logo1.png'); 
+  height: 60px;
+  background-image: url('/search.png'); 
   background-position: 5px center; 
   background-repeat: no-repeat; 
   padding-left: 40px;
@@ -71,9 +72,10 @@
 }
 button{
   width: 50px;
-  height: 53px;
+  height: 60px;
   background-color: #E84848;
   color: white;
+  border: none;
 }
 .row_border{
   border: solid 1px black;
@@ -90,4 +92,23 @@ button{
   margin-top: 40px;
   margin-bottom: 40px;
 
+}
+.col_text{
+  font-family: "Inknut Antiqua";
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.72px;
+  margin: 15px 0px 15px 0px;
+  width: 300px;
+
+}
+.col_font{
+  
+  width: 300px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+
+  
 }
