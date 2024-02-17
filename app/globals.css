@@ -1,20 +1,19 @@
 
-.col_size{
-  height: 500px;
-  
-}
-.header{
+.header-text{
   font-family: "Iowan Old Style";
   font-size: 84px;
   font-weight: 400;
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.header-row{
+  border: solid 1px black;
+}
 @media (max-width: 576px) {
-  .font-size-sm {
+  .header-text{
     font-size: 35px; 
   }
-  .icon {
+  .header-icon {
       height: 50px;
       padding-top:10px;
   }
@@ -22,7 +21,8 @@
     width: 370px;
    
   }
-}
+  
+}  
 .searchbar{
   height: 60px;
   background-image: url('/search.png'); 
@@ -32,44 +32,6 @@
   margin-top: 45px;
   margin-bottom: 34px;
 }
-.text{
-  padding-left: 5px;
- 
-}
-@media (max-width: 576px) {  
-  .font {
-    font-size: 24px;
-    width: 18px;
-    padding-bottom: 8px;
-  }  
-  .font-size1{
-    font-size: 20px;
-  } 
-}
-.hide {
-  display: none;
-}
-.font-size2{
-  
-  font-family: "Iowan Old Style";
-  font-size: 18px;
-  font-weight: 400;
-
-}
-
-@media (max-width: 576px) {
-  .desktop-show {
-      display: initial;
-  }
-}
-.box3{
-  height: 150px;
-  width: 400px;
-}
-.image{
-  width: 100%;
- 
-}
 button{
   width: 50px;
   height: 60px;
@@ -77,38 +39,72 @@ button{
   color: white;
   border: none;
 }
-.row_border{
-  border: solid 1px black;
-}
 
-.row_text{
-  margin-top: 15px;
-  margin-bottom: 20px;
-  color: #E84848;
 
+.article-col{
+  height: 519px;
+  
 }
-.footer-size{
-  padding-top: 15px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-
+.image{
+  width: 100%;
+ 
 }
-.col_text{
+.article{
   font-family: "Inknut Antiqua";
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.72px;
   margin: 15px 0px 15px 0px;
-  width: 300px;
+  /* width: 300px; */
 
 }
-.col_font{
-  
+.content{
   width: 300px;
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 15px;
 
-  
+}
+
+.footer-style{
+  font-family: "Iowan Old Style";
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+
+}
+@media (max-width: 576px) {  
+  .footer-content {
+    font-size: 24px;
+    width: 18px;
+    padding-bottom: 8px;
+  }  
+  .footer-space{
+    font-size: 20px;
+  }
+  .article-col{
+    height: 554px; 
+  }  
+}
+.hide {
+  display: none;
+}
+@media (max-width: 576px) {
+  .desktop-show {
+      display: initial;
+  }
+}
+.row-text{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #E84848;
+
+}
+.footer-space{
+  padding-left: 5px;
+ 
 }
