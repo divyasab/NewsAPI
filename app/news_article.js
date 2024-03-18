@@ -16,3 +16,7 @@ const News_article = ({ data }) => {
     )
 }
 export default News_article;
+
+
+  
+  

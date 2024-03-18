@@ -1,24 +1,36 @@
+"use client"
+import React, { useState } from "react";
 import Footer from "./footer";
 import Header from "./header";
 import News_row from "./news_row";
-import News_data from "./news_data";
+import news_api from "./news_data";
+import SearchBar from "./searchBar";
 
 const Page = () => {
-  return (
-    <>
-      <Header />
-      <div className="container">
-        <div className="row">
-          <div className="row_text">
-            <span>TOP NEWS FROM INDIA </span>
-          </div>
-        </div>
-        <News_row data={News_data.slice(0, 3)} />
-        <News_row data={News_data.slice(3, 6)} />   
-        <News_row data={News_data.slice(6, 9)} />   
-      </div>
-      <Footer />
-    </>
-  )
+    const [searchResults, setSearchResults] = useState([]);
+
+    return (
+        <>
+            <Header/>
+            <SearchBar setResults={setSearchResults} />
+            <div className="container">
+                <div className="row">
+                    <div className="row-text">
+                        <span>TOP NEWS FROM INDIA </span>
+                    </div>
+                </div>
+                {news_api && news_api.length > 0 ? (
+                    <>
+                        <News_row data={news_api.slice(0, 3)} />
+                        <News_row data={news_api.slice(3, 6)} />   
+                        <News_row data={news_api.slice(6, 9)} />
+                    </>
+                ) : (
+                    <p>No news data available</p>
+                )}
+            </div>
+            <Footer />
+        </>
+    )
 }
 export default Page;
