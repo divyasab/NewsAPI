@@ -2,7 +2,7 @@ const News_article = ({ data }) => {
     return (
         <>
             <div className="col-md-4  article-col">
-                <img className="image" src={data.image} />
+                <img className="image" src={data.urlToImage} />
                 <div className="article">
                     <span>{data.title}</span>
                 </div>
@@ -10,7 +10,7 @@ const News_article = ({ data }) => {
                     <span>{data.description}</span>
                 </div>
                 <span >Read full article </span>
-                <img src={data.image_icon} />
+                <img src="arrow.png" />
             </div>
         </>
     )

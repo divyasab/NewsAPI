@@ -1,8 +1,7 @@
-*{
-  box-sizing: border-box;
-  
+body{
+  margin: 0;
+  padding: 0;
 }
-
 .header-text{
   font-family: "Iowan Old Style";
   font-size: 84px;
@@ -22,7 +21,7 @@
       padding-top:10px;
   }
   .searchbar{
-    width: 370px;
+    width: 300px;
    
   }
   
@@ -37,7 +36,7 @@
   margin-bottom: 34px;
 }
 button{
-  width: 50px;
+  width: 60px;
   height: 60px;
   background-color: #E84848;
   color: white;

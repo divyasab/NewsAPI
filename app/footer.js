@@ -1,7 +1,7 @@
 const Footer=()=>{
     return(
         <>
-            <div className="container-fluid">
+            
                 <div className='header_row  mt-5'></div> 
 
                 <div className="row  justify-content-center ">
@@ -16,7 +16,7 @@ const Footer=()=>{
 
                 </div>
 
-            </div>
+            
         </>
     )
 }

@@ -1,4 +1,4 @@
-import news_api from "./news_data"; 
+import news_array from "./news_data"; 
 import News_article from "./news_article";
 const News_row =({data}) => {
     return (
