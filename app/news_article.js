@@ -2,15 +2,16 @@ const News_article = ({ data }) => {
     return (
         <>
             <div className="col-md-4  article-col">
-                <img className="image" src={data.urlToImage} />
+                <img className="image" src={data.image} />
                 <div className="article">
                     <span>{data.title}</span>
                 </div>
                 <div className="content">
                     <span>{data.description}</span>
                 </div>
-                <span >Read full article </span>
-                <img src="arrow.png" />
+                <a href={data.url} className="urlcolor">Read full article<img src="arrow.png" /> </a>
+              
+                
             </div>
         </>
     )

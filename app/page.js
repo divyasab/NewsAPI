@@ -4,7 +4,8 @@ import Header from "./header";
 import Footer from "./footer";
 import News_row from "./news_row";
 import news_array from "./news_data";
-import SearchBar from "./searchBar";
+import Search from "./search";
+import SearchBar from './search';
 
 const Page = () => {
     const [newsData, setNewsData] = useState(news_array);

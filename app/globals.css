@@ -58,8 +58,12 @@ button{
   font-weight: 600;
   letter-spacing: -0.72px;
   margin: 15px 0px 15px 0px;
-  /* width: 300px; */
 
+
+}
+.urlcolor{
+  color: black;
+  text-decoration:none;
 }
 .content{
   width: 300px;
